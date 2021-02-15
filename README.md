@@ -8,4 +8,4 @@ exercises.
 
 |  #  | Project                                                                                                                     | Live Demo                                                                         |
 | :-: | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| 01  | [Javascript Drum Kit](https://github.com/maverickmaruthi/Javascript30/tree/main/01-JavaScript-Drum-Kit)                             | [Live Demo](https://js-30.netlify.app/01-JavaScript-Drum-Kit/index.html)               |
+| 01  | [Javascript Drum Kit](https://github.com/maverickmaruthi/Javascript30/tree/main/01-JavaScript-Drum-Kit)                             | [Live Demo](https://js-30-mmm.netlify.app/01-JavaScript-Drum-Kit/index.html)               |
