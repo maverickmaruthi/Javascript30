@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #392f5a; 
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1 {
+  color: #fff;
+  margin-bottom: 2rem;
+  font-family: inherit;
+}
+
+.search-form {
+  width: 100%;
+  max-width: 40rem;
+  position: relative;
+}
+
+input {
+  width: 100%;
+  display: block;
+  background-color: #f092dd;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  padding: 1.6rem;
+  margin-bottom: 2rem;
+  font-family: inherit;
+  font-size: 1.6rem;
+  box-shadow: 0 .5rem 1rem rgb(154 160 185 / 5%), 
+              0 1.5rem 4rem rgb(0 0 0 / 10%);
+}
+
+input::placeholder {
+  color: #eec8e0;
+}
+
+input:focus {
+  outline: none;
+}
+
+ul.suggestions {
+  position: absolute;
+  top: 5rem;
+  left: 1rem;
+  list-style: none;
+  width: 95%;
+}
+
+.suggestions li {
+  background: #ffaff0;
+  font-size: 1.4rem;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.14);
+  margin: 0;
+  padding: 20px;
+  transition: background 0.2s;
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+}
+
+.suggestions li:nth-child(even) {
+  transform: perspective(100px) rotateX(3deg) translateY(2px) scale(1.001);
+  background: linear-gradient(to bottom, 
+  #f092dd 0%,
+  #ffaff0 100%);
+}
+
+.suggestions li:nth-child(odd) {
+  transform: perspective(100px) rotateX(-3deg) translateY(3px);
+  background: linear-gradient(to top,  
+  #f092dd 0%,
+  #ffaff0 100%);
+}
+
+.hl {
+  color: #392f5a;
+}
