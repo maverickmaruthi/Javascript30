@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "RocknRoll One", sans-serif;
+  background-color: #e7e393;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: inherit;
+  font-size: 3rem;
+  margin: 3rem 0;
+}
+
+.bandsList {
+  list-style: inside square;
+  font-size: 1.6rem;
+  font-weight: 200;
+  background: #f4c95d;
+  width: 50rem;
+  max-height: 40rem;
+  overflow-y: scroll;
+  padding: 0;
+  box-shadow: 0 0 0 2rem rgba(0, 0, 0, 0.05);
+}
+
+.bandsList li {
+  border-bottom: 1px solid #dd7230;
+  padding: 2rem;
+}
+
+.bandsList li:last-child {
+  border-bottom: 0;
+}

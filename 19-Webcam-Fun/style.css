@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Stick&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Stick", sans-serif;
+  background-color: #311847;
+  font-size: 1.6rem;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.controls > .btn,
+.controls > .rgb {
+  margin: 1rem 0;
+}
+
+.controls .btn {
+  padding: 1rem 2rem;
+  border: 0;
+  background-color: #ef5d60;
+  border-radius: .5rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-family: inherit;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.controls .btn:focus {
+  outline: none;
+}
+
+.controls .rgb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photobooth {
+  background: #e09f7d;
+  max-width: 150rem;
+  margin: 1rem;
+  border-radius: 2px;
+}
+
+/*clearfix*/
+.photobooth:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.photo {
+  width: 100%;
+  float: left;
+}
+
+.player {
+  position: absolute;
+  top: 8rem;
+  right: 1rem;
+  width: 15rem;
+}
+
+/*
+  Strip!
+*/
+
+.strip {
+  padding: 2rem;
+}
+
+.strip img {
+  width: 10rem;
+  overflow-x: scroll;
+  padding: 0.8rem 0.8rem 2.5rem 0.8rem;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  background: white;
+}
+
+.strip a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #a01a7d;
+}
+
+.strip a:nth-child(5n + 1) img {
+  transform: rotate(10deg);
+}
+.strip a:nth-child(5n + 2) img {
+  transform: rotate(-2deg);
+}
+.strip a:nth-child(5n + 3) img {
+  transform: rotate(8deg);
+}
+.strip a:nth-child(5n + 4) img {
+  transform: rotate(-11deg);
+}
+.strip a:nth-child(5n + 5) img {
+  transform: rotate(12deg);
+}
